@@ -1,0 +1,57 @@
+/* ═══════════════════════════════════════════
+   animations.css — All @keyframes & Reveal
+═══════════════════════════════════════════ */
+
+/* ─── REVEAL ON SCROLL ─── */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── FADE SLIDE UP (hero elements) ─── */
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+
+/* ─── PULSE (badge dot) ─── */
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 0   rgba(0, 255, 231, 0.4); }
+  50%       { box-shadow: 0 0 0 8px rgba(0, 255, 231, 0);   }
+}
+
+/* ─── SPIN (avatar rings) ─── */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ─── FLOAT (preview icon) ─── */
+@keyframes float {
+  0%, 100% { transform: translateY(0);   }
+  50%       { transform: translateY(-8px); }
+}
+
+/* ─── GRID PAN (background) ─── */
+@keyframes gridPan {
+  0%   { background-position: 0    0;    }
+  100% { background-position: 60px 60px; }
+}
+
+/* ─── ORB FLOAT ─── */
+@keyframes orbFloat {
+  0%   { transform: translate(0, 0)       rotate(0deg);   }
+  33%  { transform: translate(40px, -30px) rotate(120deg); }
+  66%  { transform: translate(-30px, 40px) rotate(240deg); }
+  100% { transform: translate(0, 0)       rotate(360deg); }
+}
+
+/* ─── ARROW BOUNCE (flip card hint) ─── */
+@keyframes arrowBounce {
+  0%, 100% { transform: translateX(0);   }
+  50%       { transform: translateX(4px); }
+}

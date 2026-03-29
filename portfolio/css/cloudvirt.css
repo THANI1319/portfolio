@@ -1,0 +1,168 @@
+/* ═══════════════════════════════════════════
+   cloudvirt.css
+═══════════════════════════════════════════ */
+
+#cloudvirt { min-height: auto; padding-top: 40px; padding-bottom: 80px; }
+
+.cloudvirt-box {
+  position: relative;
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-2xl);
+}
+
+/* ─── HEADER ─── */
+.cloudvirt-header {
+  background: linear-gradient(135deg, var(--bg3), var(--bg2));
+  border-bottom: 1px solid var(--border);
+  padding: 32px 40px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.cloudvirt-logo {
+  width: 72px; height: 72px;
+  border-radius: 18px;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 255, 231, 0.3);
+}
+.cloudvirt-name {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.8rem;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.cloudvirt-batch {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text2);
+  margin-top: 4px;
+}
+
+/* ─── BODY ─── */
+.cloudvirt-body {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.cloudvirt-full-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--text);
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+.cloudvirt-desc {
+  color: var(--text2);
+  line-height: 1.75;
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+}
+.cloudvirt-btns {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+.cloudvirt-btns .btn-primary,
+.cloudvirt-btns .btn-outline {
+  font-size: 0.82rem;
+  padding: 11px 22px;
+}
+
+/* ─── BROWSER PREVIEW ─── */
+.preview-frame {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.preview-bar {
+  background: var(--bg3);
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid var(--border);
+}
+.preview-dots { display: flex; gap: 5px; }
+.preview-dots span {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+}
+.preview-dots span:nth-child(1) { background: #ff6b6b; }
+.preview-dots span:nth-child(2) { background: #ffd93d; }
+.preview-dots span:nth-child(3) { background: #6bcb77; }
+.preview-url {
+  flex: 1;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 5px 12px;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--text2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.preview-content {
+  padding: 32px 24px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+.preview-icon {
+  font-size: 3rem;
+  animation: float 3s ease infinite;
+}
+.preview-site-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 1.1rem;
+}
+.preview-site-desc {
+  color: var(--text2);
+  font-size: 0.8rem;
+}
+.visit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  color: #000;
+  font-weight: 700;
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  padding: 10px 22px;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  transition: all 0.2s;
+  box-shadow: 0 4px 16px rgba(0, 255, 231, 0.2);
+}
+.visit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 255, 231, 0.4);
+}

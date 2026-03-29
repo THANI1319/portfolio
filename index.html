@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thanigaivel V — IT Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/skills.css" />
+  <link rel="stylesheet" href="css/projects.css" />
+  <link rel="stylesheet" href="css/cloudvirt.css" />
+  <link rel="stylesheet" href="css/certifications.css" />
+  <link rel="stylesheet" href="css/education.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div id="cursor"></div>
+  <div id="cursor-trail"></div>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Animated Background -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="grid-bg"></div>
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="orb orb3"></div>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav id="navbar">
+    <div class="nav-logo">TV.dev</div>
+    <ul class="nav-links">
+      <li><a href="#hero">HOME</a></li>
+      <li><a href="#skills">SKILLS</a></li>
+      <li><a href="#projects">PROJECTS</a></li>
+      <li><a href="#cloudvirt">CLOUDVIRT</a></li>
+      <li><a href="#certs">CERTS</a></li>
+      <li><a href="#education">EDUCATION</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle">
+      <span id="themeIcon">☀️</span>
+      <span id="themeLabel">LIGHT</span>
+    </button>
+  </nav>
+
+  <main>
+
+    <!-- ═══ HERO ═══ -->
+    <section id="hero">
+      <div class="hero-left">
+        <div class="hero-badge">
+          <span class="badge-dot"></span> AVAILABLE FOR INTERNSHIPS
+        </div>
+        <h1 class="hero-name">
+          THANI<br /><span>GAIVEL</span><br />V.
+        </h1>
+        <div class="hero-title">// 3RD YEAR B.TECH — INFORMATION TECHNOLOGY</div>
+        <p class="hero-desc">
+          Motivated IT student specializing in cloud computing, virtualization &amp; web technologies. Building the future, one container at a time.
+        </p>
+        <div class="hero-btns">
+          <a href="#cloudvirt" class="btn-primary">View Research ↗</a>
+          <a href="#contact" class="btn-outline">Get In Touch</a>
+          <a href="https://www.linkedin.com/in/thanigaivel-v-20607b31b/" target="_blank" class="btn-outline btn-linkedin">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+            LINKEDIN
+          </a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-avatar">
+          <div class="avatar-ring"></div>
+          <div class="avatar-ring2"></div>
+          <div class="avatar-inner">
+            <div class="avatar-letter">TV</div>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-card">
+              <div class="stat-num">7.95</div>
+              <div class="stat-label">CGPA</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">4+</div>
+              <div class="stat-label">CERTS</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">3rd</div>
+              <div class="stat-label">YEAR</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ SKILLS ═══ -->
+    <section id="skills">
+      <div class="section-header reveal">
+        <span class="section-tag">// 01 — TECHNICAL ARSENAL</span>
+        <h2 class="section-title">Skills &amp; Technologies</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category reveal">
+          <div class="skill-cat-icon">⚡</div>
+          <div class="skill-cat-title">Programming Languages</div>
+          <div class="skill-tags">
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">Python</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-cat-icon">🌐</div>
+          <div class="skill-cat-title">Web Technologies</div>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-cat-icon">🧠</div>
+          <div class="skill-cat-title">Core Concepts</div>
+          <div class="skill-tags">
+            <span class="skill-tag">OOP</span>
+            <span class="skill-tag">Data Structures</span>
+            <span class="skill-tag">Algorithms</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-cat-icon">☁️</div>
+          <div class="skill-cat-title">Cloud &amp; Virtualization</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">VMware</span>
+            <span class="skill-tag">VirtualBox</span>
+            <span class="skill-tag">Linux</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-cat-icon">🗄️</div>
+          <div class="skill-cat-title">Databases &amp; Design</div>
+          <div class="skill-tags">
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">UI/UX Design</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-cat-icon">🔧</div>
+          <div class="skill-cat-title">Tools &amp; OS</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Windows</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">MS Office</span>
+            <span class="skill-tag">Excel</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ PROJECTS ═══ -->
+    <section id="projects">
+      <div class="section-header reveal">
+        <span class="section-tag">// 02 — ACADEMIC WORK</span>
+        <h2 class="section-title">Projects</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Main Project Flip Card -->
+        <div class="flip-card reveal">
+          <div class="flip-card-inner">
+            <div class="flip-front">
+              <div class="project-icon">☁️</div>
+              <div class="project-tag">// MAIN PROJECT</div>
+              <div class="project-title">Performance Analysis of Containerization vs. Virtualization Techniques in Cloud Computing Environments</div>
+              <p class="project-desc">Deep comparative analysis of Docker containers vs VM-based virtualization — measuring CPU, memory, and scalability across workloads.</p>
+              <div class="flip-hint">Hover to explore <span>→</span></div>
+            </div>
+            <div class="flip-back">
+              <div class="back-tools">
+                <div class="back-tools-title">// TOOLS USED</div>
+                <div class="tool-chips">
+                  <span class="tool-chip">Docker</span>
+                  <span class="tool-chip">VMware</span>
+                  <span class="tool-chip">VirtualBox</span>
+                  <span class="tool-chip">Linux</span>
+                  <span class="tool-chip">Windows</span>
+                </div>
+              </div>
+              <div class="back-outcome">
+                <div class="back-outcome-title">// OUTCOME</div>
+                <p>Containers outperformed VMs in resource efficiency, boot time, and horizontal scalability — demonstrating Docker's advantage in modern cloud-native workloads.</p>
+              </div>
+              <div class="project-links">
+                <a href="https://cloudvirtnexusbatch20.netlify.app/" target="_blank" class="project-link">🌐 Visit Site</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mini Project Flip Card -->
+        <div class="flip-card reveal">
+          <div class="flip-card-inner">
+            <div class="flip-front">
+              <div class="project-icon">🔒</div>
+              <div class="project-tag">// MINI PROJECT</div>
+              <div class="project-title">Cyber Security Awareness &amp; Embedded Systems Integration</div>
+              <p class="project-desc">Explored cyber security fundamentals and embedded systems programming during structured internship at Arjun Vision &amp; MSME certified training.</p>
+              <div class="flip-hint">Hover to explore <span>→</span></div>
+            </div>
+            <div class="flip-back">
+              <div class="back-tools">
+                <div class="back-tools-title">// FOCUS AREAS</div>
+                <div class="tool-chips">
+                  <span class="tool-chip">Cyber Security</span>
+                  <span class="tool-chip">Embedded Systems</span>
+                  <span class="tool-chip">Network Basics</span>
+                  <span class="tool-chip">MSME Certified</span>
+                </div>
+              </div>
+              <div class="back-outcome">
+                <div class="back-outcome-title">// LEARNING OUTCOME</div>
+                <p>Gained hands-on exposure to security concepts, network vulnerabilities, and embedded hardware programming under MSME industry guidance.</p>
+              </div>
+              <div class="project-links">
+                <a href="#certs" class="project-link-ghost">View Certs ↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══ CLOUDVIRT NEXUS ═══ -->
+    <section id="cloudvirt">
+      <div class="section-header reveal">
+        <span class="section-tag">// 03 — RESEARCH SHOWCASE</span>
+        <h2 class="section-title">CloudVirt Nexus</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="cloudvirt-box reveal">
+        <div class="cloudvirt-header">
+          <div class="cloudvirt-logo">⚡</div>
+          <div>
+            <div class="cloudvirt-name">CloudVirt Nexus</div>
+            <div class="cloudvirt-batch">Batch 20 · Research Project · Anna University</div>
+          </div>
+        </div>
+        <div class="cloudvirt-body">
+          <div class="cloudvirt-info">
+            <div class="cloudvirt-full-title">Performance Analysis of Containerization vs. Virtualization Techniques in Cloud Computing Environments</div>
+            <p class="cloudvirt-desc">
+              This research project benchmarks container-based (Docker) vs hypervisor-based (VMware, VirtualBox) virtualization across real-world cloud workloads — analyzing CPU overhead, memory footprint, boot time, and horizontal scalability.
+            </p>
+            <p class="cloudvirt-desc">
+              The findings provide data-driven insights for organizations choosing between containerization and traditional VM deployment strategies in production cloud environments.
+            </p>
+            <div class="cloudvirt-btns">
+              <a href="https://cloudvirtnexusbatch20.netlify.app/" target="_blank" class="btn-primary">🌐 Visit CloudVirt Nexus</a>
+              <a href="#projects" class="btn-outline">← Project Details</a>
+            </div>
+          </div>
+          <div class="cloudvirt-preview">
+            <div class="preview-frame">
+              <div class="preview-bar">
+                <div class="preview-dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="preview-url">cloudvirtnexusbatch20.netlify.app</div>
+              </div>
+              <div class="preview-content">
+                <div class="preview-icon">⚡</div>
+                <div class="preview-site-name">CloudVirt Nexus — Batch 20</div>
+                <div class="preview-site-desc">Containerization vs Virtualization Research Platform</div>
+                <a href="https://cloudvirtnexusbatch20.netlify.app/" target="_blank" class="visit-btn">Open Live Site ↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CERTIFICATIONS ═══ -->
+    <section id="certs">
+      <div class="section-header reveal">
+        <span class="section-tag">// 04 — CREDENTIALS</span>
+        <h2 class="section-title">Certifications</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-card reveal">
+          <div class="cert-icon">🏭</div>
+          <div class="cert-issuer">MSME GOVERNMENT</div>
+          <div class="cert-name">Embedded Systems Training &amp; Internship Certificate</div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon">🛡️</div>
+          <div class="cert-issuer">ARJUN VISION INTERNSHIP</div>
+          <div class="cert-name">Introduction to Cyber Security</div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon">🗄️</div>
+          <div class="cert-issuer">VEI INSTITUTE</div>
+          <div class="cert-name">MongoDB Basics</div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon">🎨</div>
+          <div class="cert-issuer">VEI INSTITUTE</div>
+          <div class="cert-name">UI/UX Design Fundamentals</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ EDUCATION ═══ -->
+    <section id="education">
+      <div class="section-header reveal">
+        <span class="section-tag">// 05 — ACADEMICS</span>
+        <h2 class="section-title">Education</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <div class="timeline-dot dot-accent"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">2023 — PRESENT</div>
+            <div class="timeline-inst">Anna University</div>
+            <div class="timeline-degree">Bachelor of Information Technology</div>
+            <div class="timeline-grade">📊 CGPA: 7.95</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot dot-accent2"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">2023</div>
+            <div class="timeline-inst">MCC.HR.SEC.SCHOOL</div>
+            <div class="timeline-degree">Higher Secondary Certificate (HSC)</div>
+            <div class="timeline-grade">📊 Grade: 70.66%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CONTACT ═══ -->
+    <section id="contact">
+      <div class="section-header reveal">
+        <span class="section-tag">// 06 — LET'S CONNECT</span>
+        <h2 class="section-title">Contact</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <a href="mailto:thanigaivelt096@gmail.com" class="contact-item">
+            <div class="contact-item-icon">📧</div>
+            <div>
+              <div class="contact-item-label">EMAIL</div>
+              <div class="contact-item-value">thanigaivelt096@gmail.com</div>
+            </div>
+          </a>
+          <a href="tel:9962139958" class="contact-item">
+            <div class="contact-item-icon">📱</div>
+            <div>
+              <div class="contact-item-label">PHONE</div>
+              <div class="contact-item-value">+91 9962139958</div>
+            </div>
+          </a>
+          <div class="contact-item no-link">
+            <div class="contact-item-icon">📍</div>
+            <div>
+              <div class="contact-item-label">LOCATION</div>
+              <div class="contact-item-value">6/16 Chetpet, Chennai - 31</div>
+            </div>
+          </div>
+          <a href="https://www.linkedin.com/in/thanigaivel-v-20607b31b/" target="_blank" class="contact-item">
+            <div class="contact-item-icon linkedin-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-item-label">LINKEDIN</div>
+              <div class="contact-item-value">thanigaivel-v-20607b31b</div>
+            </div>
+          </a>
+        </div>
+        <div class="contact-personal reveal">
+          <div class="personal-card">
+            <div class="personal-card-title">🌍 Languages</div>
+            <div class="lang-chips">
+              <span class="lang-chip">Tamil 🇮🇳</span>
+              <span class="lang-chip">English 🇬🇧</span>
+            </div>
+          </div>
+          <div class="personal-card">
+            <div class="personal-card-title">🚀 Personal Skills</div>
+            <div class="skill-chips">
+              <span class="skill-chip">🤝 Team Work</span>
+              <span class="skill-chip">⚡ Quick Learner</span>
+              <span class="skill-chip">⏱️ Time Management</span>
+              <span class="skill-chip">🔄 Adaptability</span>
+            </div>
+          </div>
+          <div class="personal-card card-highlight">
+            <div class="personal-card-title highlight-title">📍 Looking For</div>
+            <p class="looking-text">Open to internships, entry-level roles, and collaborative projects in cloud computing, web development, or cybersecurity domains.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Designed &amp; Built by <span>Thanigaivel V</span> · Chennai · 2025</p>
+    <p>B.Tech Information Technology · Anna University</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/cursor.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/theme.js"></script>
+</body>
+</html>

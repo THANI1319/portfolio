@@ -1,0 +1,78 @@
+/* ═══════════════════════════════════════════
+   education.css — Timeline
+═══════════════════════════════════════════ */
+
+#education { min-height: auto; padding-top: 40px; padding-bottom: 80px; }
+
+.timeline {
+  position: relative;
+  padding-left: 32px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 0; bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--accent), var(--accent2), transparent);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+.timeline-dot {
+  position: absolute;
+  left: -28px;
+  top: 8px;
+  width: 14px; height: 14px;
+  border-radius: 50%;
+  border: 2px solid var(--bg);
+}
+.dot-accent  { background: var(--accent);  box-shadow: 0 0 12px rgba(0,   255, 231, 0.5); }
+.dot-accent2 { background: var(--accent2); box-shadow: 0 0 12px rgba(123, 97,  255, 0.5); }
+
+.timeline-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px;
+  transition: all 0.3s;
+}
+.timeline-card:hover {
+  border-color: var(--accent);
+  box-shadow: var(--glow);
+  transform: translateX(6px);
+}
+
+.timeline-year {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+.timeline-inst {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--text);
+}
+.timeline-degree {
+  color: var(--text2);
+  font-size: 0.9rem;
+  margin: 4px 0 10px;
+}
+.timeline-grade {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(0, 255, 231, 0.08);
+  border: 1px solid rgba(0, 255, 231, 0.2);
+  border-radius: var(--radius-sm);
+  padding: 4px 12px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--accent);
+}
